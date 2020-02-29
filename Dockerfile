@@ -10,4 +10,4 @@ ADD ./ /eggdemo
 RUN npm install
 
 EXPOSE 7001
-CMD ["npm", "start" ]
+CMD ["npm", "run","dev" ]

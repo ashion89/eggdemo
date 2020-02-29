@@ -17,6 +17,7 @@ class HomeService extends Service {
   }
 
   async findall() {
+    console.log("findall=======");
     const sql = 'select * from user where  id>6';
     const m = await this.app.mysql.query(sql); // 单实例可以直接通过 app.mysql 访问
     return m;
